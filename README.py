@@ -108,4 +108,4 @@ while essais_restants >0
     # verifie si la lettre a déja été proposée 
     if lettre in lettres_essayees: 
        print("Vous avez déja essayé cette lettre."
-    continue
+       continue
