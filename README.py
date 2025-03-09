@@ -90,8 +90,4 @@ def jeu_pendu():
 
     print("bienvenue au jeu du pendu!")
     print(dessinPendu((0))
-
-    while essais_restants > 0:
-        affichage_mot=' '.join((lettre if lettre in lettres_trouvees else'_'for lettre in mot_a_deviner))
-        print("mot a deviner:" + affichage_mot)
-        print("lettres essayees:"+','.join(lettres_essayees))
+    
