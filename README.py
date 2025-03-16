@@ -94,18 +94,20 @@ def jeu_pendu():
 while essais_restants >0
     #affichage mot avec lettre devinées et lettres manquantes avec '*'
     affichage_mot= ' '.joint([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
-    print("mot a deviner :" + affichage_mot
-    print("Lettres essayées:" + ',' , join(lettres_essayees))
-
+    print("mot a deviner :", affichage_mot)
+    print("Lettres essayées:", ', '.join(lettres_envoyees))
+          
     #dmd une lettre a l'utilisateur 
     lettre = input("Proposez une lettre:").upper()
 
         #verification lettre ou autre
     if len(lettre) != 1 or not lettre.isalpha(): #isalpha verifie si cest bien une lettre et non un chiffre ou symbole
-       print("Veuillez entrer une seule lettr.")
+       print("Veuillez entrer une seule lettre.")
        continue 
 
     # verification lettre deja proposer ou non 
     if lettre in lettres_essayees: 
        print("Vous avez déja essayé cette lettre."
        continue
+        #ajt la letrre a la liste des lettres qui sont éssayés
+    lettres_envoyees.append(lettre) 
