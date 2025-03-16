@@ -92,8 +92,8 @@ def jeu_pendu():
     print(dessinPendu((0))
     
 while essais_restants >0
-    #affichage mot avec lettre devinées et lettres manquantes avec '_'
-    affichage_mot= ' '.joint([lettre if lettre in lettres-trouves else '_' for in mot_a_deviner])
+    #affichage mot avec lettre devinées et lettres manquantes avec '*'
+    affichage_mot= ' '.joint([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
     print("mot a deviner :" + affichage_mot
     print("Lettres essayées:" + ',' , join(lettres_essayees))
 
