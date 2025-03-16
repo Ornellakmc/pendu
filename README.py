@@ -82,18 +82,19 @@ def choisir_hasard(fichier):
 #Fonction principale
 
 def jeu_pendu():
-    mots = liste_de_mots()
-    mot_a_deviner = choisir_hasard(mots)
-    lettres_trouvees = ()
-    lettres_envoyees = ()
-    essais_restants = 6
+    while True:
+        mots = liste_de_mots()
+        mot_a_deviner = choisir_hasard(mots)
+        lettres_trouvees = []
+        lettres_envoyees = []
+        essais_restants = 6
 
-    print("bienvenue au jeu du pendu!")
-    print(dessinPendu((0))
+        print("bienvenue au jeu du pendu!")
+        print(dessinPendu((0))
     
 while essais_restants >0
     #affichage mot avec lettre devinées et lettres manquantes avec '*'
-    affichage_mot= ' '.joint([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
+    affichage_mot=' '.joint([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
     print("mot a deviner :", affichage_mot)
     print("Lettres essayées:", ', '.join(lettres_envoyees))
           
