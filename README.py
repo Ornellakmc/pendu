@@ -77,26 +77,25 @@ def liste_de_mots():
     return l
 
 def choisir_hasard(fichier):
-    return random.choice(fichier).upper()
+    return random.choice(fichier).upper()  #choisir un mot au hasard dans la liste 
 
-#Fonction principale
-
+#Fonction principale du jeu 
 def jeu_pendu():
     while True:
-        mots = liste_de_mots()
-        mot_a_deviner = choisir_hasard(mots)
-        lettres_trouvees = []
-        lettres_envoyees = []
-        essais_restants = 6
+        mots = liste_de_mots()  #cherche une fonction non definie
+        mot_a_deviner = choisir_hasard(mots)  #choisit un mot au hasard a deviner
+        lettres_trouvees = []   #liste des lettres trouvees par les joueurs 
+        lettres_envoyees = []   #listes des lettres deja essayees
+        essais_restants = 6     #nombre dessais maximum avant de perdre
 
-        print("bienvenue au jeu du pendu!")
-        print(dessinPendu((0))
+        print("bienvenue au jeu du pendu!")  
+        print(dessinPendu((0))  #affiche le dessin du pendu correspondant a 0 erreurs
     
-while essais_restants >0
-    #affichage mot avec lettre devinées et lettres manquantes avec '*'
-    affichage_mot=' '.joint([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
+while essais_restants >0   #tant que le joueur a des essais restants
+    #affiche le mot avec les lettres trouvees et des lettres manquantes avec '*'
+    affichage_mot=' '.join([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
     print("mot a deviner :", affichage_mot)
-    print("Lettres essayées:", ', '.join(lettres_envoyees))
+    print("Lettres essayées:", ', '.join[lettres_envoyees]) #affiche les lettres essayees
           
     #dmd une lettre a l'utilisateur 
     lettre = input("Proposez une lettre:").upper()
