@@ -111,3 +111,11 @@ while essais_restants >0   #tant que le joueur a des essais restants
        continue
         #ajt la letrre a la liste des lettres qui sont éssayés
     lettres_envoyees.append(lettre) 
+
+    # verification si la lettre est dans les mots a deviner
+    if lettre in mot_a_deviner:
+        lettres_trouvees.append(lettre) #ajt la lettre aux lettres trouvées 
+        print("Bonne lettre!)
+              else: 
+                  essais_restants-=1 #diminue le nombre de tentaties restantes   
+                  print("Mauvaises lettres!) 
