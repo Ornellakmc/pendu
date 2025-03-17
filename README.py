@@ -98,7 +98,7 @@ while essais_restants >0   #tant que le joueur a des essais restants
     print("Lettres essayées:", ', '.join[lettres_envoyees]) #affiche les lettres essayees
           
     #dmd une lettre a l'utilisateur 
-    lettre = input("Proposez une lettre:").upper()
+    lettre = input("Proposez une lettre:").upper() #conveetit en majuscule
 
         #verif lettre ou autre
     if len(lettre) != 1 or not lettre.isalpha(): #isalpha verifie si cest bien une lettre et non un chiffre ou symbole
