@@ -91,7 +91,7 @@ def jeu_pendu():
         print("bienvenue au jeu du pendu!")  
         print(dessinPendu((0))  #affiche le dessin du pendu correspondant a 0 erreurs
     
-while essais_restants >0   #tant que le joueur a des essais restants
+    while essais_restants >0   #tant que le joueur a des essais restants
     #affiche le mot avec les lettres trouvees et des lettres manquantes avec '*'
     affichage_mot=' '.join([lettre if lettre in lettres-trouves else '*' for in mot_a_deviner])
     print("mot a deviner :", affichage_mot)
