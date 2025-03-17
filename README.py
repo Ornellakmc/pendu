@@ -119,4 +119,5 @@ def jeu_pendu():
               else: 
                   essais_restants-=1 #diminue le nombre de tentaties restantes   
                   print("Mauvaises lettres!") 
+              print(dessinPendu(6 - essaie_restants)) #maj du pendu 
           
