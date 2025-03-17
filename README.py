@@ -119,3 +119,4 @@ while essais_restants >0   #tant que le joueur a des essais restants
               else: 
                   essais_restants-=1 #diminue le nombre de tentaties restantes   
                   print("Mauvaises lettres!") 
+          
