@@ -20,7 +20,7 @@ Ce projet est une version simple du jeu du Pendu en Python. Le but est de devine
    python pendu.py
    ```  
 3. **Règles du jeu** :  
-   ° Un mot caché est affiché sous forme de tirets.  
+   - Un mot caché est affiché sous forme de tirets.  
    - Le joueur propose une lettre.  
    - Si la lettre est correcte, elle apparaît dans le mot.  
    - Sinon, une partie du pendu est ajoutée.  
