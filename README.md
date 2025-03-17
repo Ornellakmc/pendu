@@ -9,7 +9,7 @@ Ce projet est une implémentation du jeu du Pendu en Python. L'objectif est de d
 
 ## Fonctionnalités  
 - Sélection aléatoire d’un mot à deviner  
-- Affichage du mot sous forme masquée (`_ _ _ _`)  
+- Affichage du mot sous forme masquée (`* * * *`)  
 - Gestion des essais limités et affichage du pendu étape par étape  
 - Mode console simple et interactif  
 
@@ -24,7 +24,7 @@ Ce projet est une implémentation du jeu du Pendu en Python. L'objectif est de d
    python pendu.py
    ```  
 3. **Règles** :  
-   - Une série de `_ _ _ _` représente le mot à deviner.  
+   - Une série de `* * * *` représente le mot à deviner.  
    - Propose une lettre au clavier.  
    - Si la lettre est correcte, elle s'affiche dans le mot.  
    - Si la lettre est incorrecte, une partie du pendu apparaît.  
