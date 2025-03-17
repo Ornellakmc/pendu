@@ -100,19 +100,19 @@ while essais_restants >0   #tant que le joueur a des essais restants
     #dmd une lettre a l'utilisateur 
     lettre = input("Proposez une lettre:").upper()
 
-        #verification lettre ou autre
+        #verif lettre ou autre
     if len(lettre) != 1 or not lettre.isalpha(): #isalpha verifie si cest bien une lettre et non un chiffre ou symbole
        print("Veuillez entrer une seule lettre.")
        continue 
 
-    # verification lettre deja proposer ou non 
+    # verif lettre deja proposer ou non 
     if lettre in lettres_essayees: 
        print("Vous avez déja essayé cette lettre."
        continue
         #ajt la letrre a la liste des lettres qui sont éssayés
     lettres_envoyees.append(lettre) 
 
-    # verification si la lettre est dans les mots a deviner
+    # verif si la lettre est dans les mots a deviner
     if lettre in mot_a_deviner:
         lettres_trouvees.append(lettre) #ajt la lettre aux lettres trouvées 
         print("Bonne lettre!)
