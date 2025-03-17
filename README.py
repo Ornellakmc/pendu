@@ -81,7 +81,7 @@ def choisir_hasard(fichier):
 
 #Fonction principale du jeu 
 def jeu_pendu():
-    while True: 
+    while True: # boucle infini qui permet au joueur de jouer autant de fois qu'il veut tant qu'il ny a pas de break 
         mots = liste_de_mots()  #cherche une fonction non definie
         mot_a_deviner = choisir_hasard(mots)  #choisit un mot au hasard a deviner
         lettres_trouvees = []   #liste des lettres trouvees par les joueurs 
