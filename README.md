@@ -25,8 +25,3 @@ Ce projet est une implémentation du jeu du Pendu en Python. L'objectif est de d
    - Si la lettre est correcte, elle s'affiche dans le mot.  
    - Si la lettre est incorrecte, une partie du pendu apparaît.  
    - Tu gagnes en trouvant le mot avant d'atteindre le nombre maximal d’erreurs.  
-
-## Améliorations possibles  
-- Ajouter une interface graphique (Tkinter, Pygame)  
-- Permettre de choisir la difficulté (mots courts ou longs)  
-- Intégrer une base de mots plus variée  
