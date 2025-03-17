@@ -5,7 +5,7 @@ Ce projet est une version simple du jeu du Pendu en Python. Le but est de devine
 
 ## Fonctionnalités  
 - Choix aléatoire d’un mot à deviner  
-- Affichage du mot sous forme masquée (`_ _ _ _`)  
+- Affichage du mot sous forme masquée (`* * * *`)  
 - Nombre d’essais limités  
 - Affichage progressif du pendu  
 
