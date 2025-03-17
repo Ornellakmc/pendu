@@ -70,18 +70,18 @@ def dessinPendu(nb):
     return tab [nb]
 
 def liste_de_mots():
-    l=[]
-    with open("tous_lesLmots.txt,"r") as fichier:
-        for i in fichier:
-            l.append(i.strip())
-    return l
+    l=[] #liste vide pour tous les mots 
+    with open("tous_lesLmots.txt,"r") as fichier: #ouvre fichier mode lecture
+        for i in fichier:  
+            l.append(i.strip()) #parcours chaque ligne et on enleve les espaces et les sauts de ligne et on ajt dans la liste l
+    return l #on retoune la liste complete des mots
 
 def choisir_hasard(fichier):
     return random.choice(fichier).upper()  #choisir un mot au hasard dans la liste 
 
 #Fonction principale du jeu 
 def jeu_pendu():
-    while True:
+    while True: 
         mots = liste_de_mots()  #cherche une fonction non definie
         mot_a_deviner = choisir_hasard(mots)  #choisit un mot au hasard a deviner
         lettres_trouvees = []   #liste des lettres trouvees par les joueurs 
