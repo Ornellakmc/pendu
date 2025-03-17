@@ -1,7 +1,3 @@
-Voici un `README.md` simple et clair pour ton jeu du Pendu :  
-
----
-
 # Jeu du Pendu  
 
 ## Description  
