@@ -5,7 +5,7 @@ def dessinPendu(nb):
     tab=[
     """
        +-------+
-       |
+       |d
        |
        |
        |
