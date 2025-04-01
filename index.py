@@ -121,3 +121,4 @@ def jeu_pendu():
                 print("Mauvaises lettres!") 
                 
             print(dessinPendu(6 - essais_restants)) #maj du pendu 
+            
