@@ -9,7 +9,7 @@ def dessinPendu(nb):
        |
        |
        |
-       |
+       |yybu
     =============
     """,
     """
