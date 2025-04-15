@@ -121,4 +121,8 @@ def jeu_pendu():
                 print("Mauvaises lettres!") 
                 
             print(dessinPendu(6 - essais_restants)) #maj du pendu 
-            hhss
+            
+            # Ajout d'indications à partir de la quatrième tentative, mais pas quand il reste une seule lettre
+            if essais_restants == 3 and len(set(mot_a_deviner) - set(lettres_trouvees)) > 1:  # Plus d'une lettre à deviner
+                indication = input('Voulez-vous une indication ? (oui/non) : ').lower() #dmd au joueur si il veut une indiation lower met en minuscule
+               
